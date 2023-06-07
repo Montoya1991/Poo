@@ -8,5 +8,6 @@ namespace Poo
 {
     internal class Payment
     {
+        int id;
     }
 }

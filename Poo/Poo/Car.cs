@@ -8,9 +8,9 @@ namespace Poo
 {
     internal class Car
     {
-        public int id;
-        public string license;
-        public Account driver;
+        private int id;
+        private string license;
+        private Account driver;
         private int passanger;
 
 
@@ -22,19 +22,29 @@ namespace Poo
         }
         public void ImprimirCar()
         {
-            if (getPassanger == 4)
+            if (passanger != null)
             {
-                passanger = getPassanger;
                 Console.WriteLine("Licence: " + license + " Name Driver: " + driver.name + " Passanger " + passanger);
+            }
+        }
+        public int gettPassanger { get; set; }
+
+        public int getPassanger()
+        {
+            return passanger;
+        }
+
+        public void setPassanger(int passanger)
+        {
+            if (passanger == 4)
+            {
+                this.passanger = passanger;
             }
             else
             {
                 Console.WriteLine("Necesitas asigar cuatro pasajeros");
             }
-
         }
-        public int getPassanger { get; set; }
-
 
 
     }

@@ -9,9 +9,15 @@ namespace Poo
     internal class Account
     {
         int id;
-        string name;
-        string document;
+        public string name;
+        public string document;
         string email;
         string password;
+
+        public Account(string name, string document)
+        {
+            this.name = name;
+            this.document = document;
+        }
     }
 }

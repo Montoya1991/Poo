@@ -10,12 +10,32 @@ namespace Poo
     {
         public int id;
         public string license;
-        public string driver;
-        public int passanger;
+        public Account driver;
+        private int passanger;
 
+
+        public Car(string licence, Account driver)
+        {
+            this.license = licence;
+            this.driver = driver;
+
+        }
         public void ImprimirCar()
         {
-            Console.WriteLine("Licence: " + license + " Driver: " + driver);
+            if (getPassanger == 4)
+            {
+                passanger = getPassanger;
+                Console.WriteLine("Licence: " + license + " Name Driver: " + driver.name + " Passanger " + passanger);
+            }
+            else
+            {
+                Console.WriteLine("Necesitas asigar cuatro pasajeros");
+            }
+
         }
+        public int getPassanger { get; set; }
+
+
+
     }
 }

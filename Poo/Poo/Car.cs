@@ -13,21 +13,10 @@ namespace Poo
         private Account driver;
         private int passanger;
 
+        public int getid { get; set; }
 
-        public Car(string licence, Account driver)
-        {
-            this.license = licence;
-            this.driver = driver;
-
-        }
-        public void ImprimirCar()
-        {
-            if (passanger != null)
-            {
-                Console.WriteLine("Licence: " + license + " Name Driver: " + driver.name + " Passanger " + passanger);
-            }
-        }
-        public int gettPassanger { get; set; }
+        public int getlicense { get; set; }
+        public int getdriver { get; set; }
 
         public int getPassanger()
         {
@@ -45,6 +34,20 @@ namespace Poo
                 Console.WriteLine("Necesitas asigar cuatro pasajeros");
             }
         }
+        public Car(string licence, Account driver)
+        {
+            this.license = licence;
+            this.driver = driver;
+
+        }
+        public void ImprimirCar()
+        {
+            if (passanger != null)
+            {
+                Console.WriteLine("Licence: " + license + " Name Driver: " + driver.name + " Passanger " + passanger);
+            }
+        }
+
 
 
     }

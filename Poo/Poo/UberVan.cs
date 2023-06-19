@@ -16,5 +16,10 @@ namespace Poo
             this.typeAccepted = typeAccepted;
             this.seatMaterial = seatMaterial;
         }
+        public UberVan(string licence, Account driver) : base(licence, driver)
+        {
+            this.typeAccepted = typeAccepted;
+            this.seatMaterial = seatMaterial;
+        }
     }
 }

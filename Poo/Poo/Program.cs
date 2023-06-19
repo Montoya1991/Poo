@@ -21,6 +21,8 @@ namespace MyApp // Note: actual namespace depends on the project name.
             uberX.setPassanger(4);
             uberX.ImprimirCar();
 
+            UberVan uberVan = new UberVan("FGH456",new Account("Andres Herrera", "040991942515"));
+            uberVan.setPassanger(6);
             //UberPool Carro2 = new UberPool("ZXC567", new Account("Ana", "000000000001"),"Dogge","Zafiro");
             //Carro2.ImprimirCar();
         }
